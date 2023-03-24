@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta property="og:title" content="Expressive Text-to-Image Generation with Rich Text">
+  <meta property="og:description" content="Expressive Text-to-Image Generation with Rich Text">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="663">
+  <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
+  <meta property="og:type" content="website">
+
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="./assets/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9VZKE74FPW');
+  </script>
+  <title>Expressive Text-to-Image Generation with Rich Text</title>
+
+  <link href="./assets/css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/bulma.min.css">
+  <link rel="stylesheet" href="./assets/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./assets/bulma-slider.min.css">
+  <link rel="stylesheet" href="./assets/tab_gallery.css">
+  <link rel="stylesheet" href="./assets/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./assets/academicons.min.css">
+  <link rel="stylesheet" href="./assets/index.css">
+  <link rel="stylesheet" href="./assets/juxtapose.css">
+
+  <script src="./assets/jquery.min.js"></script>
+  <script defer="" src="./assets/fontawesome.all.min.js"></script>
+  <script src="./assets/bulma-carousel.min.js"></script>
+  <script src="./assets/bulma-slider.min.js"></script>
+  <script src="./assets/magnifier.js"></script>
+  <link href="./assets/menlo" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Sofia ' rel='stylesheet'>
+  <link rel="stylesheet" href="./assets/image_card_fader.css">
+  <link rel="stylesheet" href="./assets/image_card_slider.css">
+
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/menlo');
+  </style>
+</head>
+
+
+
+<body data-new-gr-c-s-check-loaded="14.1098.0" data-gr-ext-installed="">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">Expressive Text-to-Image Generation with Rich Text</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://songweige.github.io/">Songwei Ge</a><sup>&#128034;</sup></span>
+              <span class="author-block">
+                <a href="https://taesung.me/">Taesung Park</a><sup><img
+                    src="assets/Adobe_Corporate_Horizontal_Red_HEX.svg" width="14" /></sup>
+              </span>
+              <span class="author-block">
+                <a href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a><sup><img src="assets/cmu-scotty-icon.png"
+                    width="14" /></sup></span>
+              <span class="author-block">
+                <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a><sup>&#128034;</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>&#128034;</sup>University of Maryland, College Park </span>
+              <span class="author-block"><sup><img src="assets/Adobe_Corporate_Horizontal_Red_HEX.svg"
+                    width="14" /></sup>Adobe Research </span>
+              <span class="author-block"><sup><img src="assets/cmu-scotty-icon.png" width="14" /></sup>Carnegie Mellon
+                University</span>
+            </div>
+
+            <!-- <div class="is-size-5 publication-venue">
+              in Submission
+            </div> -->
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                          d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z">
+                        </path>
+                      </svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false"
+                        data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                          d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                        </path>
+                      </svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-edit"></i>
+                    </span>
+                    <span>Demo</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="./#bibtex" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-obp"></i>
+                    </span>
+                    <span>BibTex</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop has-text-centered">
+        <!-- row 1 -->
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content">
+              <div class="tab_container">
+                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                  <div class="jx-slider">
+                    <div class="jx-handle " style="left: 54.53%;">
+                      <div class="jx-arrow jx-left"></div>
+                      <div class="jx-control">
+                        <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <div class="jx-arrow jx-right"></div>
+                    </div>
+                    <div class="jx-image jx-left " style="width: 54.53%;">
+                      <img src="./image_assets/teaser/pizza_plain.png" alt="" data-label="Plain-text">
+                    </div>
+                    <div class="jx-image jx-right " style="width: 45.47%;"><img
+                        src="./image_assets/teaser/pizza_rich.png" alt="" data-label="Rich-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="has-text-justified">
+              <p>
+                <span style="font-family:roboto;">"A pizza with mushrooms, pepperonis, and
+                  <span style="font-size: 1.6em;">pineapples</span> on the top, 4k, photorealism."</span>
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <div class="tab_container">
+                <div id="juxtapose-embed2" data-startingposition="30%" data-animate="true" class="juxtapose">
+                  <div class="jx-slider">
+                    <div class="jx-handle " style="left: 54.53%;">
+                      <div class="jx-arrow jx-left"></div>
+                      <div class="jx-control">
+                        <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <div class="jx-arrow jx-right"></div>
+                    </div>
+                    <div class="jx-image jx-left " style="width: 54.53%;"><img
+                        src="./image_assets/teaser/girl_plain.png" alt="" data-label="Plain-text">
+                    </div>
+                    <div class="jx-image jx-right " style="width: 45.47%;"><img
+                        src="./image_assets/teaser/girl_rich.png" alt="" data-label="Rich-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="has-text-justified">
+              <p>
+                <span style="font-family:roboto;">"A <span style="font-family:sofia;">young
+                    woman</span> sits at a table in a <span style="font-family:Inconsolata;">beautiful, lush
+                    garden,</span>
+                  reading a book on the table."</span>
+              </p>
+              <p>
+                <span style="font-family:roboto;">Styles: <span style="font-family:sofia;">Johannes
+                    Vermeer</span>, <span style="font-family:Inconsolata;">Claude Monet</span></span>
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <div class="tab_container">
+                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                  <div class="jx-slider">
+                    <div class="jx-handle " style="left: 54.53%;">
+                      <div class="jx-arrow jx-left"></div>
+                      <div class="jx-control">
+                        <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <div class="jx-arrow jx-right"></div>
+                    </div>
+                    <div class="jx-image jx-left " style="width: 54.53%;">
+                      <img src="./image_assets/teaser/rose_plain.png" alt="" data-label="Plain-text">
+                    </div>
+                    <div class="jx-image jx-right " style="width: 45.47%;"><img
+                        src="./image_assets/teaser/rose_rich.png" alt="" data-label="Rich-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="has-text-justified">
+              <p>
+                <span style="font-family:roboto;">"A mesmerizing sight that captures the beauty of a <span
+                    style="color:rgb(71, 117, 252);">rose</span> blooming, close up"</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- row 2 -->
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content">
+              <div class="tab_container">
+                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                  <div class="jx-slider">
+                    <div class="jx-handle " style="left: 54.53%;">
+                      <div class="jx-arrow jx-left"></div>
+                      <div class="jx-control">
+                        <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <div class="jx-arrow jx-right"></div>
+                    </div>
+                    <div class="jx-image jx-left " style="width: 54.53%;">
+                      <img src="./image_assets/teaser/cat_plain.png" alt="" data-label="Plain-text">
+                    </div>
+                    <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/teaser/cat_rich.png"
+                        alt="" data-label="Rich-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="has-text-justified">
+              <p>
+                <span style="font-family:roboto;">"A close-up of a cat<sup>1</sup> riding a scooter. Tropical trees in
+                  the background."</span>
+              </p>
+              <p>
+                <span style="font-size:0.6em;"><sup>1</sup>A cat wearing a wearing glasses and has a bandana around its
+                  neck.</span>
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <div class="tab_container">
+                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                  <div class="jx-slider">
+                    <div class="jx-handle " style="left: 54.53%;">
+                      <div class="jx-arrow jx-left"></div>
+                      <div class="jx-control">
+                        <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <div class="jx-arrow jx-right"></div>
+                    </div>
+                    <div class="jx-image jx-left " style="width: 54.53%;">
+                      <img src="./image_assets/teaser/sunflower_plain.png" alt="" data-label="Plain-text">
+                    </div>
+                    <div class="jx-image jx-right " style="width: 45.47%;"><img
+                        src="./image_assets/teaser/sunflower_rich.png" alt="" data-label="Rich-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="has-text-justified">
+              <p>
+                <span style="font-family:roboto;">"A vibrant field of <span style="font-family:Monoton;">
+                    sunflowers</span> under the sunset. A <span style="font-family:Akronim;">towering
+                    mountain</span><sup>1</sup> rises up in the distance."</span>
+              </p>
+              <p>
+                <span style="font-size:0.6em;"><sup>1</sup>A single snow mountain.</span>
+                <span style="font-family:roboto;">Styles: <span
+                    style="font-family:Monoton; font-size: 0.8em;">Hokusai</span>, <span
+                    style="font-family:Akronim;">Van Gogh</span>.</span>
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <div class="tab_container">
+                <div id="juxtapose-embed2" data-startingposition="30%" data-animate="true" class="juxtapose">
+                  <div class="jx-slider">
+                    <div class="jx-handle " style="left: 54.53%;">
+                      <div class="jx-arrow jx-left"></div>
+                      <div class="jx-control">
+                        <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <div class="jx-arrow jx-right"></div>
+                    </div>
+                    <div class="jx-image jx-left " style="width: 54.53%;"><img
+                        src="./image_assets/teaser/bedroom_plain.png" alt="" data-label="Plain-text">
+                    </div>
+                    <div class="jx-image jx-right " style="width: 45.47%;"><img
+                        src="./image_assets/teaser/bedroom_rich.png" alt="" data-label="Rich-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="has-text-justified">
+              <p>
+                <span style="font-family:roboto;">"A nightstand<sup>1</sup> next to a bed with <span
+                    style="color:rgb(255, 0, 0);">pillows</span> on it. Grey wall<sup>2</sup> bedroom."
+              </p>
+              <p>
+                <span style="font-size:0.6em;"><sup>1</sup>Nightstand with some books.
+                </span>
+                <span style="font-size:0.6em;"><sup>2</sup>Accent shelf with plants on the wall.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <h2 class="title is-3">Rich-text-to-image Generation</h2> -->
+        <div class="has-text-justified">
+          <p>
+            We explore using versatile format information from rich text including font size, color, family, and
+            footnote for text-to-image generation. Our framework enables intuitive local style control,
+            precise color generation, and complementary description for long prompts.
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="section">
+
+    <!--/ Matting. -->
+    <div class="container is-max-desktop">
+
+      <!-- color -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-4 has-text-centered"><span style="color: #CD66FF;">F</span><span
+              style="color: #FF6599;">o</span><span style="color: #FF0000;">n</span><span
+              style="color: #FF8E00;">t</span> <span style="color: #f2f211;">c</span><span
+              style="color: #008E00;">o</span><span style="color: #00C0C0;">l</span><span
+              style="color: #400098;">o</span><span style="color: #8E008E;">r</span> controls the precise color of
+            objects</h2>
+          <div class="content has-text-centered">
+            <img src="./image_assets/font_color.jpg" width="150%">
+          </div>
+        </div>
+      </div>
+      <!-- /color -->
+      <hr>
+      <!-- style -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-4 has-text-centered"><span style="font-family:sofia;">Font family</span> indicates the
+            styles of local regions</h2>
+          <div class="content has-text-centered">
+            <img src="./image_assets/font.jpg" width="150%">
+          </div>
+        </div>
+      </div>
+      <!-- /style -->
+      <hr>
+      <!-- footnote -->
+      <h2 class="title is-4 has-text-centered">Footnote<sup>1</sup> provides complementary descriptions, enabling
+        complex text prompts </h2>
+      <ul class="nav nav-pills nav-justified" id="method-view-ul" style="width: 100%">
+        <li style="font-size: 0.9em;" class="active"><a href="javascript: void(0);" onclick="ChangeMethod(0);">Ours</a>
+        </li>
+        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(1);">Stable
+            Diffusion [4] (Plain-Text)</a></li>
+        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(2);">Stable
+            Diffusion [4] (Full-Text)</a></li>
+        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);"
+            onclick="ChangeMethod(3);">Attend-and-Excite
+            [3]</a></li>
+        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangeMethod(4);">InstructPix2Pix
+            [2]</a></li>
+        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);"
+            onclick="ChangeMethod(5);">Prompt-to-Prompt
+            [1]</a></li>
+      </ul>
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="has-text-justified">
+            <p>
+              A coffee table<sup><span style="color:red">1</span></sup> sits in front of a sofa<sup><span
+                  style="color:blue">2</span></sup> on a cozy carpet. A painting<sup><span
+                  style="color:green">3</span></sup> on the wall. cinematic lighting, trending on artstation, 4k,
+              hyperrealistic, focused, extreme details. <br>
+              <span style="font-size:0.8em;"><sup><span style="color:red">1</span></sup>A rustic wooden coffee table
+                adorned with scented candles and many books.</span><br>
+              <span style="font-size:0.8em;"><sup><span style="color:blue">2</span></sup>A plush sofa with a soft
+                blanket and colorful pillows on it. </span><br>
+              <span style="font-size:0.8em;"><sup><span style="color:green">3</span></sup>A painting of wheat field
+                with a cottage in the distance, close up shot, trending on artstation, cgsociety, hd, calm,
+                complimentary colours, realistic lighting, by Albert Bierstadt, Frederic Edwin Church.</span><br>
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <img src="./image_assets/footnote/livingroom/livingroom_ours.jpg" id="image_livingroom" width="99%">
+          </div>
+        </div>
+        <div class="column">
+          <div class="has-text-justified">
+            <p>
+              A car<sup><span style="color:red">1</span></sup> driving on the road. A bicycle<sup><span
+                  style="color:blue">2</span></sup> nearby a tree<sup><span style="color:green">3</span></sup>. A
+              cityscape<sup><span style="color:rgb(170, 170, 55)">4</span></sup> in the background.<br><br>
+              <span style="font-size:0.8em;"><sup><span style="color:red">1</span></sup>A sleek sports car gleams on the
+                road in the sunlight, with its aerodynamic curves and polished finish catching the light.</span><br>
+              <span style="font-size:0.8em;"><sup><span style="color:blue">2</span></sup>A bicycle with rusted frame and
+                worn tires.</span><br>
+              <span style="font-size:0.8em;"><sup><span style="color:green">3</span></sup>A dead tree with a few red
+                apples on it.</span><br>
+              <span style="font-size:0.8em;"><sup><span style="color:rgb(170, 170, 55)">4</span></sup>A bustling
+                Hongkong cityscape with towering skyscrapers.</span>
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <img src="./image_assets/footnote/cityscape/cityscape_ours.jpg" id="image_cityscape" width="99%">
+          </div>
+        </div>
+      </div>
+      <!-- /footnote -->
+    </div>
+  </section>
+
+  <!-- Method & Workflow -->
+  <section class="hero is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop has-text-centered">
+        <h2 class="title is-3">Rich-text-to-image Generation Framework</h2>
+        <div class="has-text-justified">
+          <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+            <source src="./video_assets/framework.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            The plain text prompt is first input to the diffusion model to collect the cross-attention maps. Attention
+            maps are averaged across different heads, layers, and time steps to create token maps later used for
+            region-based diffusion processes. The rich text prompts obtained from the editor are stored in JSON format,
+            providing attributes for each token span. According to the attributes of each token, corresponding controls
+            are applied as guidance on the regions indicated by the token maps.<br>
+          </p>
+        </div>
+        <hr>
+        <h2 class="title is-3">Example Workflow with our Framework</h2>
+        <div class="has-text-justified">
+          <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+            <source src="./video_assets/workflow.mp4" type="video/mp4">
+          </video>
+        </div>
+        Our framework can naturally be integrated into a rich text editor, enabling a tight, streamlined UI.
+      </div>
+    </div>
+  </section>
+  <!--/ Method & Workflow -->
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column is-full-width">
+                <h2 class="title is-3 has-text-centered">References</h2>
+                <div class="content has-text-justified">
+                  <p>
+                  </p>
+                  [1] Amir Hertz, Ron Mokady, Jay Tenenbaum, Kfir Aberman, Yael Pritch, and Daniel Cohen-Or. <a
+                    href="https://arxiv.org/abs/2208.01626">Prompt-to-prompt image editing with cross attention
+                    control.</a> arXiv:2208.01626, 2022.<br>
+                  [2] Tim Brooks, Aleksander Holynski, and Alexei A Efros. <a
+                    href="https://arxiv.org/abs/2211.09800">Instructpix2pix: Learning to follow image editing
+                    instructions.</a> CVPR, 2023<br>
+                  [3] Hila Chefer, Yuval Alaluf, Yael Vinker, Lior Wolf, and Daniel Cohen-Or. <a
+                    href="https://arxiv.org/abs/2301.13826">Attend-and-excite: Attention-based semantic guidance for
+                    text-to-image diffusion models.</a>arXiv preprint arXiv:2301.13826, 2023.<br>
+                  [4] Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Bjo ̈rn Ommer. <a
+                    href="https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html6">High-resolution
+                    image synthesis with latent diffusion models.</a>CVPR, 2022<br>
+                  <p></p>
+                </div>
+                <!-- Prompt Interpolation image -->
+              </div>
+            </div>
+
+            <!-- Acknowledgements. -->
+            <div class="columns is-centered">
+              <div class="column is-full-width">
+                <h2 class="title is-3 has-text-centered">Acknowledgment</h2>
+                <div class="content has-text-justified">
+                  <p>
+                    We thank .
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/ Acknowledgements. -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title"><a id="bibtex">BibTeX</a></h2>
+      <pre><code>@article{ge2023expressive,
+      title={Expressive Text-to-Image Generation with Rich Text},
+      author={Ge, Songwei and Park, Taesung and Zhu, Jun-Yan and Huang, Jia-Bin},
+      journal={arXiv preprint arXiv:},
+      year={2023}
+    }</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website adapted from the following <a href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script type="text/javascript">
+    var currentMethodList = ['ours', 'plain', 'full', 'aae', 'ip2p', 'p2p'];
+    var currentMethod = "ours";
+
+    function ChangeMethod(idx) {
+      var li_list = document.getElementById("method-view-ul").children;
+      for (i = 0; i < li_list.length; i++) {
+        li_list[i].className = "nav-link";
+      }
+      li_list[idx].className = "nav-link active";
+      currentMethod = currentMethodList[idx];
+
+      var image_livingroom = document.getElementById('image_livingroom');
+      var image_cityscape = document.getElementById('image_cityscape');
+      image_livingroom.src = "./image_assets/footnote/livingroom/livingroom_" + currentMethod + ".jpg";
+      image_cityscape.src = "./image_assets/footnote/cityscape/cityscape_" + currentMethod + ".jpg";
+    }
+  </script>
+
+  <script src="./assets/juxtapose.js"></script>
+
+  <script src="./assets/popper.min.js"></script>
+  <script src="./assets/bootstrap.min.js"></script>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
