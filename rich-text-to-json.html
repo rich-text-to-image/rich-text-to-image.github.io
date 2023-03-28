@@ -33,13 +33,20 @@
                     <option value="Akronim">Cubism</option>
                     <option value="Monoton">Neon Art</option>
                 </select>
-                <select class="ql-size"></select>
+                <select class="ql-size">
+                    <option value="18px">Small</option>
+                    <option selected>Normal</option>
+                    <option value="32px">Large</option>
+                    <option value="50px">Huge</option>
+                </select>
+            </span>
+            <span class="ql-formats">
+                <button class="ql-strike"></button>
             </span>
             <!-- <span class="ql-formats">
                 <button class="ql-bold"></button>
                 <button class="ql-italic"></button>
                 <button class="ql-underline"></button>
-                <button class="ql-strike"></button>
             </span> -->
             <span class="ql-formats">
                 <select class="ql-color"></select>
@@ -101,6 +108,9 @@
             // modify url if desired
             return url;
         }
+        var SizeStyle = Quill.import('attributors/style/size');
+        SizeStyle.whitelist = ['10px', '18px', '32px', '50px', '64px'];
+        Quill.register(SizeStyle, true);
         Quill.register(Link, true);
         Quill.register(Font, true);
         var icons = Quill.import('ui/icons');
