@@ -89,8 +89,13 @@
         <div class="row">
             <button class="btn btn-primary" id="text2json">Text to JSON</button>
         </div>
+        <br>
         <div class="row">
             <pre id="json-container"></pre>
+            <br>
+            <button class="btn btn-primary" onclick="copyToClipboard()">
+                Copy
+            </button>
         </div>
     </div>
 
@@ -125,6 +130,15 @@
         });
     </script>
 
+    <script>
+        function copyToClipboard() {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($("#json-container").text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+    </script>
 
 </body>
 
