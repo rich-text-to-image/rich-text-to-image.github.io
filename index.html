@@ -120,7 +120,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://huggingface.co/spaces/songweig/rich-text-to-image"
+                  <a href="https://github.com/SongweiGe/rich-text-to-image"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-edit"></i>
@@ -145,9 +145,6 @@
           <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
             <source src="./video_assets/workflow_demo.mp4" type="video/mp4">
           </video>
-          <p style="font-size: small;text-align: right;">
-            * The computation time is skipped in this video.
-          </p>
         </div>
       </div>
     </div>
@@ -434,6 +431,13 @@
       <!-- footnote -->
       <h2 class="title is-4 has-text-centered">Footnote provides complementary descriptions, enabling complex text
         prompts </h2>
+      <ul class="nav nav-pills nav-justified" id="prompt-view-ul" style="width: 100%;margin-bottom: 0.5em;">
+        <li style="font-size: 0.9em;" class="active"><a href="javascript: void(0);"
+            onclick="ChangePrompt(0);">Livingroom</a>
+        </li>
+        <li style="font-size: 0.9em;" class=""><a href="javascript: void(0);" onclick="ChangePrompt(1);">Cityscape</a>
+        </li>
+      </ul>
       <ul class="nav nav-pills nav-justified" id="method-view-ul" style="width: 100%">
         <li style="font-size: 0.9em;" class="active"><a href="javascript: void(0);" onclick="ChangeMethod(0);">Ours</a>
         </li>
@@ -450,21 +454,22 @@
             onclick="ChangeMethod(5);">Prompt-to-Prompt
             [1]</a></li>
       </ul>
-      <div class="columns is-centered">
+      <div class="columns is-centered" id="div_cityscape" style="display: none;">
         <div class="column">
           <div class="has-text-justified">
             <p>
-              A coffee table<sup><span style="color:red">1</span></sup> sits in front of a sofa<sup><span
-                  style="color:blue">2</span></sup> on a cozy carpet. A painting<sup><span
-                  style="color:green">3</span></sup> on the wall. cinematic lighting, trending on artstation, 4k,
-              hyperrealistic, focused, extreme details. <br>
-              <span style="font-size:0.8em;"><sup><span style="color:red">1</span></sup>A rustic wooden coffee table
-                adorned with scented candles and many books.</span><br>
-              <span style="font-size:0.8em;"><sup><span style="color:blue">2</span></sup>A plush sofa with a soft
-                blanket and colorful pillows on it. </span><br>
-              <span style="font-size:0.8em;"><sup><span style="color:green">3</span></sup>A painting of wheat field
-                with a cottage in the distance, close up shot, trending on artstation, cgsociety, hd, calm,
-                complimentary colours, realistic lighting, by Albert Bierstadt, Frederic Edwin Church.</span><br>
+              <span style="font-size:1.25em;">A car<sup><span style="color:red">1</span></sup> driving on the
+                road. A bicycle<sup><span style="color:rgb(36, 192, 240)">2</span></sup> nearby a tree<sup><span
+                    style="color:green">3</span></sup>. A cityscape<sup><span
+                    style="color:rgb(238, 238, 62)">4</span></sup> in the background.<br><br></span>
+              <span style="font-size:1.1em;"><sup><span style="color:red">1</span></sup>A sleek sports car gleams on the
+                road in the sunlight, with its aerodynamic curves and polished finish catching the light.</span><br>
+              <span style="font-size:1.1em;"><sup><span style="color:rgb(36, 192, 240)">2</span></sup>A bicycle with
+                rusted frame and worn tires.</span><br>
+              <span style="font-size:1.1em;"><sup><span style="color:green">3</span></sup>A dead tree with a few red
+                apples on it.</span><br>
+              <span style="font-size:1.1em;"><sup><span style="color:rgb(238, 238, 62)">4</span></sup>A bustling
+                Hongkong cityscape with towering skyscrapers.</span>
             </p>
           </div>
         </div>
@@ -474,21 +479,21 @@
           </div>
         </div>
       </div>
-      <div class="columns is-centered">
+      <div class="columns is-centered" id="div_livingroom" style="display: true;">
         <div class="column">
           <div class="has-text-justified">
             <p>
-              A car<sup><span style="color:red">1</span></sup> driving on the road. A bicycle<sup><span
-                  style="color:blue">2</span></sup> nearby a tree<sup><span style="color:green">3</span></sup>. A
-              cityscape<sup><span style="color:rgb(170, 170, 55)">4</span></sup> in the background.<br><br>
-              <span style="font-size:0.8em;"><sup><span style="color:red">1</span></sup>A sleek sports car gleams on the
-                road in the sunlight, with its aerodynamic curves and polished finish catching the light.</span><br>
-              <span style="font-size:0.8em;"><sup><span style="color:blue">2</span></sup>A bicycle with rusted frame and
-                worn tires.</span><br>
-              <span style="font-size:0.8em;"><sup><span style="color:green">3</span></sup>A dead tree with a few red
-                apples on it.</span><br>
-              <span style="font-size:0.8em;"><sup><span style="color:rgb(170, 170, 55)">4</span></sup>A bustling
-                Hongkong cityscape with towering skyscrapers.</span>
+              <span style="font-size:1.25em;">A coffee table<sup><span style="color:red">1</span></sup> sits in front of
+                a sofa<sup><span style="color:rgb(36, 192, 240)">2</span></sup> on a cozy carpet. A painting<sup><span
+                    style="color:green">3</span></sup> on the wall. cinematic lighting, trending on artstation, 4k,
+                hyperrealistic, focused, extreme details. <br><br></span>
+              <span style="font-size:1.1em;"><sup><span style="color:red">1</span></sup>A rustic wooden coffee table
+                adorned with scented candles and many books.</span><br>
+              <span style="font-size:1.1em;"><sup><span style="color:rgb(36, 192, 240)">2</span></sup>A plush sofa with
+                a soft blanket and colorful pillows on it. </span><br>
+              <span style="font-size:1.1em;"><sup><span style="color:green">3</span></sup>A painting of wheat field
+                with a cottage in the distance, close up shot, trending on artstation, cgsociety, hd, calm,
+                complimentary colours, realistic lighting, by Albert Bierstadt, Frederic Edwin Church.</span><br>
             </p>
           </div>
         </div>
@@ -569,7 +574,9 @@
                 <h2 class="title is-3 has-text-centered">Acknowledgment</h2>
                 <div class="content has-text-justified">
                   <p>
-                    We thank .
+                    We are grateful to Mia Tang, Aaron Hertzmann, Nupur Kumari, and Aniruddha Mahapatra for their
+                    helpful discussion. This work is partly supported by NSF award no. 239076, NSF grants no.
+                    IIS-1910132 and IIS-2213335.
                   </p>
                 </div>
               </div>
@@ -629,6 +636,22 @@
       var image_cityscape = document.getElementById('image_cityscape');
       image_livingroom.src = "./image_assets/footnote/livingroom/livingroom_" + currentMethod + ".jpg";
       image_cityscape.src = "./image_assets/footnote/cityscape/cityscape_" + currentMethod + ".jpg";
+    }
+    function ChangePrompt(idx) {
+      var li_list = document.getElementById("prompt-view-ul").children;
+      for (i = 0; i < li_list.length; i++) {
+        li_list[i].className = "nav-link";
+      }
+      li_list[idx].className = "nav-link active";
+      var div_livingroom = document.getElementById('div_livingroom');
+      var div_cityscape = document.getElementById('div_cityscape');
+      if (idx == 0) {
+        div_livingroom.style.display = "";
+        div_cityscape.style.display = "none";
+      } else {
+        div_livingroom.style.display = "none";
+        div_cityscape.style.display = "";
+      }
     }
   </script>
 
