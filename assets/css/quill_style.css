@@ -142,3 +142,18 @@
 .ql-font-Monoton {
     font-family: "Monoton";
 }
+
+.ql-color .ql-picker-options [data-value=Color-Picker] {
+    background: none !important;
+    width: 100% !important;
+    height: 20px !important;
+    text-align: center;
+}
+
+.ql-color .ql-picker-options [data-value=Color-Picker]:before {
+    content: 'Color Picker';
+}
+
+.ql-color .ql-picker-options [data-value=Color-Picker]:hover {
+    border-color: transparent !important;
+}
