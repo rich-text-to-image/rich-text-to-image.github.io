@@ -5,3 +5,10 @@ function text2json() {
     var jsonContainer = document.getElementById("json-container");
     jsonContainer.textContent = jsonString;
 };
+
+$("#json2text").click(function () { json2text() });
+function json2text() {
+    var jsonContainer = document.getElementById("json-container");
+    console.log(jsonContainer.value)
+    quill.setContents(JSON.parse(jsonContainer.value));
+};
