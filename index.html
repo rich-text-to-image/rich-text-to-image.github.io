@@ -562,11 +562,13 @@
         </div>
         <div class="content has-text-justified">
           <p>
-            The plain text prompt is first input to the diffusion model to collect the cross-attention maps. Attention
-            maps are averaged across different heads, layers, and time steps, and then taken maximum across tokens to
-            create token maps. The rich text prompts obtained from the editor are stored in JSON format,
+            The plain text prompt is first input to the diffusion model to collect the self-attention and cross-attention maps. Attention
+            maps are averaged across different heads, layers, and time steps. The self-attention maps are then used to create the segmentation
+            using spectral clustering and the cross-attention label each segment. 
+            The rich text prompts obtained from the editor are stored in JSON format,
             providing attributes for each token span. According to the attributes of each token, corresponding controls
-            are applied as denoising prompt or guidance on the regions indicated by the token maps.<br>
+            are applied as denoising prompt or guidance on the regions indicated by the token maps.
+            We preserve the structure and background from plain-text generation by injecting the features or blending the noised samples.<br>
           </p>
         </div>
         <!-- <hr>
