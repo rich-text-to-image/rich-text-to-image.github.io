@@ -122,6 +122,14 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
+                  <a href="https://arxiv.org/abs/2304.06720" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
                   <a href="https://rich-text-to-image.github.io/assets/rich_text_to_image_generation.pdf"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -133,15 +141,22 @@
                         </path>
                       </svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
                     </span>
-                    <span>Paper</span>
+                    <span>Conference Version</span>
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2304.06720" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://rich-text-to-image.github.io/assets/rich_text_to_image_generation_ijcv.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="ai ai-arxiv"></i>
+                      <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                          d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z">
+                        </path>
+                      </svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
                     </span>
-                    <span>arXiv</span>
+                    <span>Journal Version</span>
                   </a>
                 </span>
                 <span class="link-block">
@@ -191,21 +206,21 @@
       </div>
     </div>
   </section>
-  <section class="hero is-light is-small">
+  <section class="hero is-light is-big has-carousel">
     <div class="hero-body">
       <div class="container is-max-desktop has-text-centered">
         <!-- <h2 class="title is-3">Rich-text-to-image Generation</h2> -->
         <div class="has-text-justified">
           <p>
-            We explore using versatile format information from rich text like font size, color, style, and
-            footnote for text-to-image generation. Our framework enables intuitive local style control,
-            precise color generation, and supplementary description for long prompts.
+            We explore using versatile format information from rich text, such as font size, color, style, and
+            footnote, for text-to-image generation and editing. Our framework enables various controlibility, including 
+            intuitive local style control,
+            precise color generation, and supplementary description for long prompts. Check out our paper for more applications.
           </p>
           <br>
         </div>
-        <!-- row 1 -->
-        <div class="columns is-centered">
-          <div class="column">
+        <div id="carousel-demo" class="results-carousel">
+          <div class="item-sg">
             <div class="content">
               <div class="tab_container">
                 <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
@@ -230,12 +245,41 @@
             </div>
             <div class="has-text-justified">
               <p>
-                <span style="font-family:roboto;">"A pizza with mushrooms, pepperonis, and
-                  <span style="font-size: 1.6em;">pineapples</span> on the top, 4k, photorealism."</span>
+                <span style="font-family:roboto;">A pizza with mushrooms, pepperonis, and
+                  <span style="font-size: 1.6em;">pineapples</span> on the top.</span>
               </p>
             </div>
           </div>
-          <div class="column">
+          <div class="item-sg"><div class="content">
+            <div class="tab_container">
+              <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                <div class="jx-slider">
+                  <div class="jx-handle " style="left: 54.53%;">
+                    <div class="jx-arrow jx-left"></div>
+                    <div class="jx-control">
+                      <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+                    <div class="jx-arrow jx-right"></div>
+                  </div>
+                  <div class="jx-image jx-left " style="width: 54.53%;">
+                    <img src="./image_assets/teaser/church_plain.png" alt="" data-label="Plain-text">
+                  </div>
+                  <div class="jx-image jx-right " style="width: 45.47%;"><img
+                      src="./image_assets/teaser/church_rich.png" alt="" data-label="Rich-text">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="has-text-justified">
+            <p>
+              <span style="font-family:roboto;">A Gothic <span style="color:rgb(246, 128, 170);">church</span> in the sunset with a beautiful landscape in the background.
+                </span>
+            </p>
+          </div>
+          </div>
+          <div class="item-sg">
             <div class="content">
               <div class="tab_container">
                 <div id="juxtapose-embed2" data-startingposition="30%" data-animate="true" class="juxtapose">
@@ -260,14 +304,14 @@
             </div>
             <div class="has-text-justified">
               <p>
-                <span style="font-family:roboto;">"A <span style="font-family:sofia;">night sky filled with stars</span> above <span style="font-family:Inconsolata;">a turbulent sea</span> with giant waves."</span>
+                <span style="font-family:roboto;">A <span style="font-family:sofia;">night sky filled with stars</span> above <span style="font-family:Inconsolata;">a turbulent sea</span> with giant waves.</span>
               </p>
               <p>
                 <span style="font-family:roboto;">Styles: <span style="font-family:sofia;">Van Gogh</span>, <span style="font-family:Inconsolata;">Ukiyo-e</span></span>
               </p>
             </div>
           </div>
-          <div class="column">
+          <div class="item-sg">
             <div class="content">
               <div class="tab_container">
                 <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
@@ -281,42 +325,9 @@
                       <div class="jx-arrow jx-right"></div>
                     </div>
                     <div class="jx-image jx-left " style="width: 54.53%;">
-                      <img src="./image_assets/teaser/church_plain.png" alt="" data-label="Plain-text">
+                      <img src="./image_assets/teaser/corgi_plain.png" alt="" data-label="Plain-text">
                     </div>
-                    <div class="jx-image jx-right " style="width: 45.47%;"><img
-                        src="./image_assets/teaser/church_rich.png" alt="" data-label="Rich-text">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="has-text-justified">
-              <p>
-                <span style="font-family:roboto;">"A Gothic <span style="color:rgb(246, 128, 170);">church</span> in the sunset with a beautiful landscape in the background.
-                  "</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- row 2 -->
-        <div class="columns is-centered">
-          <div class="column">
-            <div class="content">
-              <div class="tab_container">
-                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
-                  <div class="jx-slider">
-                    <div class="jx-handle " style="left: 54.53%;">
-                      <div class="jx-arrow jx-left"></div>
-                      <div class="jx-control">
-                        <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
-                          aria-valuemax="100"></div>
-                      </div>
-                      <div class="jx-arrow jx-right"></div>
-                    </div>
-                    <div class="jx-image jx-left " style="width: 54.53%;">
-                      <img src="./image_assets/teaser/panda_plain.png" alt="" data-label="Plain-text">
-                    </div>
-                    <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/teaser/panda_rich.png"
+                    <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/teaser/corgi_rich.png"
                         alt="" data-label="Rich-text">
                     </div>
                   </div>
@@ -325,17 +336,21 @@
             </div>
             <div class="has-text-justified">
               <p>
-                <span style="font-family:roboto;">"A panda<sup>1</sup> standing on a cliff by a waterfall."</span>
+                <span style="font-family:roboto;">A close-up photo of a corgi wearing a <span style="color:rgb(223, 85, 165);">hat</span><sup>1</sup>,  <span style="font-family:VT323;">beach and ocean</span>
+                  in the background.</span>
               </p>
               <p>
-                <span style="font-size:0.6em;"><sup>1</sup>Happy kung fu panda, asian art, ultra detailede.</span>
+                <span style="font-family:roboto;">Styles: <span style="font-family:VT323;">Impressionism.</span></span>
+              </p>
+              <p>
+                <span style="font-size:0.6em;"><sup>1</sup>A lady's hat.</span>
               </p>
             </div>
           </div>
-          <div class="column">
+          <div class="item-sg">
             <div class="content">
               <div class="tab_container">
-                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                <div id="juxtapose-embed2" data-startingposition="30%" data-animate="true" class="juxtapose">
                   <div class="jx-slider">
                     <div class="jx-handle " style="left: 54.53%;">
                       <div class="jx-arrow jx-left"></div>
@@ -345,11 +360,11 @@
                       </div>
                       <div class="jx-arrow jx-right"></div>
                     </div>
-                    <div class="jx-image jx-left " style="width: 54.53%;">
-                      <img src="./image_assets/teaser/duck_plain.png" alt="" data-label="Plain-text">
+                    <div class="jx-image jx-left " style="width: 54.53%;"><img
+                        src="./image_assets/teaser/suit_plain.jpg" alt="" data-label="Input Image">
                     </div>
                     <div class="jx-image jx-right " style="width: 45.47%;"><img
-                        src="./image_assets/teaser/duck_rich.png" alt="" data-label="Rich-text">
+                        src="./image_assets/teaser/suit_rich.jpg" alt="" data-label="Rich-text">
                     </div>
                   </div>
                 </div>
@@ -357,15 +372,45 @@
             </div>
             <div class="has-text-justified">
               <p>
-                <span style="font-family:roboto;">"A pixel art of a duck with a gun<sup>1</sup> in hand, wearing a hat<sup>2</sup>, minimalist, flat"</span>
+                <span style="font-family:roboto;">A man in suit<sup>1</sup> with a green apple on his face..
               </p>
               <p>
-                <span style="font-size:0.6em;"><sup>1</sup>A bouquet of flowers.</span><br>
-                <span style="font-size:0.6em;"><sup>2</sup>A black hat decorated with a red flower.</span>
+                <span style="font-size:0.6em;"><sup>1</sup>A colorful Hawaiian shirt.
+                </span>
               </p>
             </div>
           </div>
-          <div class="column">
+          <div class="item-sg">
+            <div class="content">
+              <div class="tab_container">
+                <div id="juxtapose-embed2" data-startingposition="30%" data-animate="true" class="juxtapose">
+                  <div class="jx-slider">
+                    <div class="jx-handle " style="left: 54.53%;">
+                      <div class="jx-arrow jx-left"></div>
+                      <div class="jx-control">
+                        <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <div class="jx-arrow jx-right"></div>
+                    </div>
+                    <div class="jx-image jx-left " style="width: 54.53%;"><img
+                        src="./image_assets/teaser/dog_plain.png" alt="" data-label="Plain-text">
+                    </div>
+                    <div class="jx-image jx-right " style="width: 45.47%;"><img
+                        src="./image_assets/teaser/dog_rich.png" alt="" data-label="Rich-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="has-text-justified">
+              <p>
+                <span style="font-family:roboto;">A <a href="./image_assets/teaser/my_dog.png"><u>dog</u></a> playing guitar on a boat, sailing in the ocean.
+              </p>
+            </div>
+          </div>
+          <!-- item 5 -->
+          <div class="item-sg">
             <div class="content">
               <div class="tab_container">
                 <div id="juxtapose-embed2" data-startingposition="30%" data-animate="true" class="juxtapose">
@@ -390,11 +435,174 @@
             </div>
             <div class="has-text-justified">
               <p>
-                <span style="font-family:roboto;">"A girl with <span style="color:rgb(255, 135, 0);">long hair</span> sitting in a cafe, by a table with coffee<sup>1</sup> on it, best quality, ultra detailed, dynamic pose."
+                <span style="font-family:roboto;">A girl with <span style="color:rgb(255, 135, 0);">long hair</span> sitting in a cafe, by a table with coffee<sup>1</sup> on it, best quality, ultra detailed, dynamic pose.
               </p>
               <p>
                 <span style="font-size:0.6em;"><sup>1</sup>Ceramic coffee cup with intricate design, a dance of earthy browns and delicate gold accents. The dark, velvety latte is in it.
                 </span>
+              </p>
+            </div>
+          </div>
+          <!-- item 6 -->
+          <div class="item-sg">
+            <div class="content">
+              <div class="tab_container">
+                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                  <div class="jx-slider">
+                    <div class="jx-handle " style="left: 54.53%;">
+                      <div class="jx-arrow jx-left"></div>
+                      <div class="jx-control">
+                        <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <div class="jx-arrow jx-right"></div>
+                    </div>
+                    <div class="jx-image jx-left " style="width: 54.53%;">
+                      <img src="./image_assets/teaser/duck_plain.png" alt="" data-label="Plain-text">
+                    </div>
+                    <div class="jx-image jx-right " style="width: 45.47%;"><img
+                        src="./image_assets/teaser/duck_rich.png" alt="" data-label="Rich-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="has-text-justified">
+              <p>
+                <span style="font-family:roboto;">A pixel art of a duck with a gun<sup>1</sup> in hand, wearing a hat<sup>2</sup>, minimalist, flat</span>
+              </p>
+              <p>
+                <span style="font-size:0.6em;"><sup>1</sup>A bouquet of flowers.</span><br>
+                <span style="font-size:0.6em;"><sup>2</sup>A black hat decorated with a red flower.</span>
+              </p>
+            </div>
+          </div>
+          <!-- item 6 -->
+          <div class="item-sg">
+            <div class="content">
+              <div class="tab_container">
+                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                  <div class="jx-slider">
+                    <div class="jx-handle " style="left: 54.53%;">
+                      <div class="jx-arrow jx-left"></div>
+                      <div class="jx-control">
+                        <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <div class="jx-arrow jx-right"></div>
+                    </div>
+                    <div class="jx-image jx-left " style="width: 54.53%;">
+                      <img src="./image_assets/teaser/duck2_plain.png" alt="" data-label="Plain-text">
+                    </div>
+                    <div class="jx-image jx-right " style="width: 45.47%;"><img
+                        src="./image_assets/teaser/duck2_rich.png" alt="" data-label="Rich-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="has-text-justified">
+              <p>
+                <span style="font-family:roboto;">A watercolor painting of the detective duck wearing a sheriff
+                  uniform<sup>1</sup> and holding a vintage handgun<sup>2</sup>. </span>
+              </p>
+              <p>
+                <span style="font-size:0.6em;"><sup>1</sup>A dark green, washed jacket.</span><br>
+                <span style="font-size:0.6em;"><sup>2</sup>A beautiful flower bouquet made of pink roses.</span>
+              </p>
+            </div>
+          </div>
+          <div class="item-sg">
+            <div class="content">
+              <div class="tab_container">
+                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                  <div class="jx-slider">
+                    <div class="jx-handle " style="left: 54.53%;">
+                      <div class="jx-arrow jx-left"></div>
+                      <div class="jx-control">
+                        <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <div class="jx-arrow jx-right"></div>
+                    </div>
+                    <div class="jx-image jx-left " style="width: 54.53%;">
+                      <img src="./image_assets/teaser/backpack_plain.png" alt="" data-label="Plain-text">
+                    </div>
+                    <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/teaser/backpack_rich.png"
+                        alt="" data-label="Rich-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="has-text-justified">
+              <p>
+                <span style="font-family:roboto;">A kid wearing a <a href="./image_assets/teaser/my_backpack.jpg"><u>backpack</u></a> riding a bike in a street with fallen leaves.
+              </p>
+            </div>
+          </div>
+          <div class="item-sg">
+            <div class="content">
+              <div class="tab_container">
+                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                  <div class="jx-slider">
+                    <div class="jx-handle " style="left: 54.53%;">
+                      <div class="jx-arrow jx-left"></div>
+                      <div class="jx-control">
+                        <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <div class="jx-arrow jx-right"></div>
+                    </div>
+                    <div class="jx-image jx-left " style="width: 54.53%;">
+                      <img src="./image_assets/teaser/panda_plain.png" alt="" data-label="Plain-text">
+                    </div>
+                    <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/teaser/panda_rich.png"
+                        alt="" data-label="Rich-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="has-text-justified">
+              <p>
+                <span style="font-family:roboto;">A panda<sup>1</sup> standing on a cliff by a waterfall.</span>
+              </p>
+              <p>
+                <span style="font-size:0.6em;"><sup>1</sup>Happy kung fu panda, asian art, ultra detailede.</span>
+              </p>
+            </div>
+          </div>
+          <!-- item 7 -->
+          <div class="item-sg">
+            <div class="content">
+              <div class="tab_container">
+                <div id="juxtapose-embed2" data-startingposition="30%" data-animate="true" class="juxtapose">
+                  <div class="jx-slider">
+                    <div class="jx-handle " style="left: 54.53%;">
+                      <div class="jx-arrow jx-left"></div>
+                      <div class="jx-control">
+                        <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <div class="jx-arrow jx-right"></div>
+                    </div>
+                    <div class="jx-image jx-left " style="width: 54.53%;"><img
+                        src="./image_assets/teaser/hat_plain.jpg" alt="" data-label="Input Image">
+                    </div>
+                    <div class="jx-image jx-right " style="width: 45.47%;"><img
+                        src="./image_assets/teaser/hat_rich.jpg" alt="" data-label="Rich-text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="has-text-justified">
+              <p>
+                <span style="font-family:roboto;">A portrait of a man with a golden beard wearing a <span style="font-family:Playfair Display;">hat</span>.
+              </p>
+              <p>
+                <span style="font-family:roboto;">Style: <span style="font-family:Playfair Display;">Cubism</span></span>
               </p>
             </div>
           </div>
@@ -700,7 +908,6 @@
       }
     }
   </script>
-
   <script src="./assets/js/juxtapose.js"></script>
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/jquery.min.js"></script>
@@ -709,6 +916,13 @@
   <script src="./assets/js/bulma-carousel.min.js"></script>
   <script src="./assets/js/bulma-slider.min.js"></script>
   <script src="./assets/js/magnifier.js"></script>
+  <script>
+    bulmaCarousel.attach('#carousel-demo', {
+      slidesToScroll: 1,
+      slidesToShow: 3,
+      loop: true
+    });
+  </script>
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 

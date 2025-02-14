@@ -20,12 +20,12 @@
 </head>
 
 <body>
-    <div id="standalone-container">
+    <div id="standalone-container"style="width: 1520px;">
         <div id="toolbar-container">
             <span class="ql-formats">
                 <select class="ql-font">
                     <option selected>Base</option>
-                    <option value="mirza">Claude Monet</option>
+                    <option value="mirza">Watercolor</option>
                     <option value="roboto">Ukiyoe</option>
                     <option value="cursive">Cyber Punk</option>
                     <option value="sofia">Pop Art</option>
@@ -37,9 +37,9 @@
                 </select>
                 <select class="ql-size">
                     <option value="18px">Small</option>
-                    <option selected>Normal</option>
-                    <option value="32px">Large</option>
-                    <option value="50px">Huge</option>
+                    <option value="34px">Normal</option>
+                    <option selected value="64px">Large</option>
+                    <option value="64px">Huge</option>
                 </select>
             </span>
             <span class="ql-formats">
@@ -89,7 +89,7 @@
                 <button class="ql-clean"></button>
             </span>
         </div>
-        <div id="editor-container" style="height:250px;"></div>
+        <div id="editor-container" style="height:100px;"></div>
         <div class="row">
             <button class="btn btn-primary" id="text2json">Text to JSON</button>
         </div>
@@ -125,7 +125,7 @@
             return url;
         }
         var SizeStyle = Quill.import('attributors/style/size');
-        SizeStyle.whitelist = ['10px', '18px', '32px', '50px', '64px'];
+        SizeStyle.whitelist = ['10px', '18px', '32px', '34px', '50px', '64px'];
         Quill.register(SizeStyle, true);
         Quill.register(Link, true);
         Quill.register(Font, true);
